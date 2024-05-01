@@ -22,7 +22,7 @@ struct FirstView: View {
                     VStack {
                         ForEach(data, id: \.self) { item in
                             Text("\(item)")
-                                .font(.title.monospacedDigit())
+                                .font(.system(.title, design: .monospaced))
                                 .foregroundStyle(Color(uiColor: .systemGray3))
                                 .frame(maxWidth: .infinity)
                         }
